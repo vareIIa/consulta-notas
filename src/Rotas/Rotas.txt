@@ -1,0 +1,34 @@
+criar um challenge post => /challenge
+
+{
+    "enrolledId": string,
+    "challenge": challengeEnum,
+    "grade": number
+}
+
+buscar pelo id GET => challenge/:id
+
+buscar pelo id da matricula GET => challenge/enrolled/:id
+
+buscar pelo id da cidade GET => challenge/city/:id
+
+buscar pela matéria GET => challenge/challengeName/:challengeEnum
+
+editar a nota pelo id patch => challenge/:id
+
+{
+    "grade": number
+}
+
+deletar o challenge DELETE => challenge/:id
+
+export enum ChallengeEnum {
+  NoCode = 'NoCode',
+  IntroWeb = 'IntroWeb',
+  Linux = 'Linux',
+  Python = 'Python',
+  Scratch = 'Scratch',
+  ElementosDeInterface = 'ElementosDeInterface',
+}
+
+enrolled/email:email
