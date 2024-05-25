@@ -218,7 +218,7 @@ function App() {
 
       <Box
         sx={{
-          marginTop: "15vh",
+          marginTop: "20vh",
           marginBottom: "2vh",
           display: "flex",
           justifyContent: "center",
@@ -285,13 +285,13 @@ function App() {
 
 
 
-                      <Box>
+                      <Box sx={{display: "flex", justifyContent: "center"}} >
 
                       <Button
                         color="primary"
                         variant="contained"
                         href="https://site-notas-pac.vercel.app/"
-                        style={{ minWidth: 180, height: 50, marginLeft: 10, fontSize: 17}}
+                        style={{ minWidth: isMobile ? "20%" : "70%" , height: isMobile ? "70%" : "auto", fontSize: 17}}
                       >
                         Bom Despacho
                       </Button>
@@ -301,7 +301,7 @@ function App() {
                         color="primary"
                         variant="contained"
                         href="https://avaliacoespd.vercel.app/"
-                        style={{ minWidth: 180, height: 50, marginLeft: 10, fontSize: 17}}
+                        style={{ minWidth: isMobile ? "30%" : "70%", height: isMobile ? "70%" : "auto", marginLeft: 10, fontSize: 17}}
                       >
                         Itabira
                       </Button>
